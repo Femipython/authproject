@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Registration Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Form for user details -->
+<div class="col-sm-12 col-md-12 col-lg-6 ">
+    <p id="signUp">Sign up with us!</p>
+    <p id="callAction">Creating web receipts for your customers is easier than before, send in as a PDF or send the weblink, either ways, it’s easier than you think.</p>
+    <!-- Form for user details -->
+    <form method="GET">
+        <input class="userDetails" type="text" name="fullname" placeholder="Full Name"><br><br>
+
+        <input class="userDetails" type="email" name="email" placeholder="Email Address"><br><br>
+
+        <div class="input-icon">
+            <input type="password" id="password-field" name="password" placeholder="Enter Your Password">
+            <i class="fas fa-eye icon" id="pass-status" onClick="viewPassword()"></i>
+        </div><br>
+
+        <div class="input-icon">
+            <input type="password" id="confirmPassword-field" name="password" placeholder="Confirm Password">
+            <i class="fas fa-eye icon" id="check-status" onClick="confirmPassword()"></i>
+        </div><br>
+
+        <!-- Submission/Register button -->
+        <button id="button" type="submit" name="submit">Register to start now!</button>
+    </form>
+    <p id="callAction2">Already have an account?<span id="nextPage"><a href="login.html"> Sign in here</a></span></p>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
