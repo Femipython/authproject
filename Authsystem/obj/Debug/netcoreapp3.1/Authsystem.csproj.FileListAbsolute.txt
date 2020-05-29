@@ -164,3 +164,7 @@ C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\
 C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_AuthLayout.cshtml.g.cs
 C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Areas\administratorAreaRegistration\Views\_adminLayout.cshtml.g.cs
 C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\Receipt\Index.cshtml.g.cs
+C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\Receipt\Create.cshtml.g.cs
+C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\Receipt\Edit.cshtml.g.cs
+C:\Users\User\Desktop\Authsystem\Authsystem\obj\Debug\netcoreapp3.1\Razor\Views\Receipt\Details.cshtml.g.cs

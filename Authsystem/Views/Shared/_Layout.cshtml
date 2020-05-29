@@ -2,118 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="keyword" content="digital receipt printinvoice printreceipt generatereceipt DigiReceipts">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@ViewData["Title"]</title>
+    <link rel='icon' href='~/img/favicon.png' type='image/x-icon' />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
     <link rel="stylesheet" href="~/css/home_page.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 </head>
 <body>
 
     <!-- Header -->
-
     <div class="section-container">
         <section class="wrap-header-intro">
             <div class="section-header-navigation" id="navigation">
-                <a class="section-header-title" href="#">DigiReceipts</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DigiReceipts</a>
                 <div class="section-nav">
-                    <a href="#" class="nav-login">Login</a>
-                    <a href="#" class="nav-register">Register to start now!</a>
+                    <a class="nav-login" asp-area="Identity" asp-page="Account/Login">Login</a>
+                    <a class="nav-register" asp-area="Identity" asp-page="/Account/Register">Register to start now!</a>
                     <a href="javascript:void(0);" class="icon" onclick="navbar()">
                         <i class="fa fa-bars"></i>
                     </a>
                 </div>
             </div>
-            <!-- Introduction -->
-
-            @*<div class="intro">
-                <div class="section-intro-title">
-                    Create receipts for your customers In 3 seconds
-                </div>
-                <div class="section-intro-paragraph">
-                    <p>
-                        Creating web receipts for your customers is easier than before,
-                        send it as a PDF or send the weblink, either ways, it’s easier than you think
-                    </p>
-                </div>
-                <div class="section-intro-email">
-                    <div class="section-email">Enter Your Email Address</div>
-                    <div class="section-email-start"><a href="#">Start now!</a></div>
-                </div>*@
-                <div>
-                    @RenderBody()
-                </div>
-            </div>
-        </section>
-
-        <!-- Services -->
-
-        <section class="wrap-services-footer">
-            <div class="services-offered">
-                <div class="section-services-title">
-                    Fast-track your business with us
-                </div>
-
-                <div class="section-services-paragraph">
-                    <p>
-                        Creating web receipts for your customers is easier than before,
-                        send it as a PDF or send the weblink
-                    </p>
-                </div>
-                <div class="services">
-                    <div class="service">
-                        <img src="~/img/Icon awesome-user-friends.svg" alt="">
-                        User-friendly Interface
-                        <p>
-                            Creating web receipts for your customers is easier than before,
-                            send it as a PDF or send the weblink, either ways, it’s easier than you think.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <img src="~/img/Icon awesome-share-square.svg" alt="">
-                        Export and Sharing Options
-                        <p>
-                            Creating web receipts for your customers is easier than before,
-                            send it as a PDF or send the weblink, either ways, it’s easier than you think.
-                        </p>
-                    </div>
-                    <div class="service">
-                        <img src="~/img/Icon material-business-center.svg" alt="">
-                        Business Ready Always
-                        <p>
-                            Creating web receipts for your customers is easier than before,
-                            send it as a PDF or send the weblink, either ways, it’s easier than you think.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="section-offers">
-                <div class="section-offers-title">
-                    Fast-track your business with us now!
-                </div>
-                <div class="section-offers-email">
-                    <div class="section-email">Enter Your Email Address</div>
-                    <div class="section-email-start"><a href="#">Start now!</a></div>
-                </div>
-            </div>
-            <!-- Footer -->
-
-            <section class="footer-items">
-                <div class="footer">
-                    <div class="footer-team">
-                        Created by team-enya
-                    </div>
-                    <div class="footer-privacy">
-                        Privacy Policy | Terms and Conditions
-                    </div>
-                </div>
-            </section>
         </section>
     </div>
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer-items">
+        <div class="footer">
+            <div class="footer-team">
+                Created by team-enya
+            </div>
+            <div class="footer-privacy">
+                Privacy Policy | Terms and Conditions
+            </div>
+        </div>
+    </section>
 </body>
 </html>
 
@@ -124,7 +59,5 @@
 
 <script type="text/javascript" src="~/js/loginScript.js"></script>
 
-@section Scripts{
-    @RenderSection("Scripts", required: false)
+@RenderSection("Scripts", required: false)
 
-}

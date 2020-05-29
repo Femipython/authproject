@@ -4,6 +4,17 @@
     ViewData["Title"] = "Log in";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!-- Google fonts cdn -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Font awesome cdn -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<!-- Bootstrap cdn -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- style sheet -->
+<link rel="stylesheet" type="text/css" href="~/css/loginStyle.css">
+
 <!-- Grid container -->
 <div class="container">
     <div class="row justify-content-between">
@@ -16,7 +27,7 @@
             <p id="callAction">Creating web receipts for your customers is easier than before, send in as a PDF or send the weblink, either ways, it’s easier than you think.</p>
             <!-- Form for user details -->
             <form>
-                <input class="userDetail" type="email" name="email" placeholder="Email Address"><br><br>
+                <input class="userDetail" type="email" name="email" placeholder="Email Address"><br>
 
                 <div class="input-icon">
                     <input type="password" id="password-field" name="password" placeholder="Password">
@@ -24,17 +35,12 @@
                 </div><br>
 
                 <!-- Login button -->
-                <button id="button" type="submit" name="submit">Login to your account</button>
+                <button id="button" type="submit" value="Index">Login to your account</button>
             </form>
-            <p id="callAction2">Can’t remember your password?</p>
-            <p id="reset"><a href="#">Reset it here</a></p>
         </div>
-
     </div>
 </div>
-
-<script type="text/javascript" src="~/js/loginScript.js"></script>p>
-
+<script type="text/javascript" src="~/js/loginScript.js"></script>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
