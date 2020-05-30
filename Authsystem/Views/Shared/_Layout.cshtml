@@ -23,7 +23,7 @@
             <div class="section-header-navigation" id="navigation">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DigiReceipts</a>
                 <div class="section-nav">
-                    <a class="nav-login" asp-area="Identity" asp-page="Account/Login">Login</a>
+                    <a class="nav-login" asp-area="Identity" asp-page="/Account/Login">Login</a>
                     <a class="nav-register" asp-area="Identity" asp-page="/Account/Register">Register to start now!</a>
                     <a href="javascript:void(0);" class="icon" onclick="navbar()">
                         <i class="fa fa-bars"></i>
@@ -37,7 +37,6 @@
             @RenderBody()
         </main>
     </div>
-
     <!-- Footer -->
     <section class="footer-items">
         <div class="footer">

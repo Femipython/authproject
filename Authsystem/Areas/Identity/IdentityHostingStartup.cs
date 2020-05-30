@@ -1,6 +1,6 @@
 ﻿using System;
-using Authsystem.Areas.Identity.Data;
 using Authsystem.Data;
+using Authsystem.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -16,9 +16,7 @@ namespace Authsystem.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
-                services.AddDbContext<AuthDbContext>(options =>
-                    options.UseSqlServer(
-                        context.Configuration.GetConnectionString("AuthDbContextConnection")));
+                services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer (context.Configuration.GetConnectionString("Myconnection")));
 
                 services.AddDefaultIdentity<ApplicationUser>(options => 
                 {
@@ -26,7 +24,7 @@ namespace Authsystem.Areas.Identity
                     options.Password.RequireLowercase = false;
                     options.Password.RequireUppercase = false;
                 })
-                    .AddEntityFrameworkStores<AuthDbContext>();
+                    .AddEntityFrameworkStores<ApplicationDbContext>();
             });
         }
     }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Authsystem.Models;
+using Authsystem.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Authsystem.Controllers

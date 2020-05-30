@@ -35,7 +35,7 @@ using Authsystem.Areas.Identity.Pages;
 #nullable disable
 #nullable restore
 #line 5 "C:\Users\User\Desktop\Authsystem\Authsystem\Areas\Identity\Pages\_ViewImports.cshtml"
-using Authsystem.Areas.Identity.Data;
+using Authsystem.Models;
 
 #line default
 #line hidden
@@ -48,7 +48,7 @@ using Authsystem.Areas.Identity.Pages.Account;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c19cacfb3b77e436228279046ed52bb219443b1", @"/Areas/Identity/Pages/Account/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"51720c4ed746168c652f753b0ba3624ae818e572", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"243f948209f2c9c8d178eb2e0991d9286e993aa8", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages_Account__ViewImports : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
